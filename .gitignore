@@ -1,0 +1,12 @@
+.DS_Store
+Thumbs.db
+
+.vscode/
+.idea/
+
+node_modules/
+package-lock.json
+yarn.lock
+
+*.zip
+*.crx

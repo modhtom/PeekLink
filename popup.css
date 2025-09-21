@@ -1,0 +1,118 @@
+.link-preview-popup {
+  position: absolute;
+  z-index: 2147483647;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-width: 300px;
+  min-height: 200px;
+}
+
+.link-preview-popup.fixed {
+  position: fixed !important;
+}
+
+.link-preview-content {
+  width: 100%;
+  height: 100%;
+  border: none;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9f9;
+}
+
+.link-preview-content .message {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #666;
+  font-size: 16px;
+}
+
+.link-preview-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.reader-view-content {
+  font-family: Georgia, serif;
+  line-height: 1.7;
+  font-size: 18px;
+  padding: 20px 40px;
+  overflow-y: auto;
+  background-color: #fdfdfd;
+  color: #333;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+}
+.reader-view-content h1 {
+  color: #111;
+}
+
+.link-preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: #f0f0f0;
+  cursor: move;
+  border-bottom: 1px solid #ddd;
+  flex-shrink: 0;
+}
+
+.link-preview-title {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 15px;
+}
+
+.link-preview-controls {
+  display: flex;
+  gap: 5px;
+}
+.lp-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+.lp-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.link-preview-resizer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 15px;
+  height: 15px;
+  cursor: nwse-resize;
+}
+.link-preview-resizer::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #888;
+  border-bottom: 2px solid #888;
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+}
